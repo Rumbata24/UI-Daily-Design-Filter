@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  color: #000;
+}
+
+body {
+  background-color: rgba(244, 249, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+.wrapper {
+  font-size: 1.2rem;
+
+  background-color: #e9f0f9;
+
+  width: 478px;
+  height: 726px;
+
+  margin: 100px auto;
+
+  border-radius: 50px;
+
+  position: relative;
+
+  box-shadow: 0px 22px 65px -20px rgba(255, 51, 51, 0.3);
+}
+
+.filter {
+  background-color: #fffcf5;
+  width: 381px;
+  height: 652px;
+  margin: 0 auto;
+  padding: 4rem;
+  border-radius: 30px;
+
+  position: absolute;
+
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0px 22px 65px -20px rgba(253, 197, 66, 0.1);
+}
+
+.close-icon {
+  position: absolute;
+  right: 16%;
+  top: 23%;
+  z-index: 99;
+}
+
+.filter h3 {
+  margin-bottom: 1.5rem;
+}
+
+.top-items label {
+  font-size: 0.9rem;
+}
+
+.top-items input {
+  background-color: #fffcf5;
+  border: none;
+  border: 1px solid #333;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.top-items .space {
+  margin-top: 0.8rem;
+}
+
+.bottom-items {
+  margin-top: 2rem;
+}
+
+.temperature-destination-slidecontainer {
+  width: 100%;
+}
+
+.temperature-destination-slidecontainer label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.temperature-destination-slidecontainer .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 8px; /* Specified height */
+  background: #b8b8b8; /* Grey background */
+  outline: none; /* Remove outline */
+  border-radius: 12px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #000; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.apply-filter {
+  width: 241px;
+  height: auto;
+  padding-block: 1.1rem;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background-color: transparent;
+  margin: 1rem 0;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.bottom-items .checkbox-container {
+  display: flex;
+  margin-block: 0.8rem;
+  align-items: center;
+}
+
+.bottom-items .checkbox-container label {
+  font-size: 1rem;
+}
+.bottom-items .checkbox-container input {
+  margin-right: 0.5rem;
+
+  width: 25px;
+  height: 25px;
+  border: none;
+  border: 1px solid black;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Style the tick (checked state) */
+input[type="checkbox"]:checked::before {
+  content: "\2713"; /* Unicode character for checkmark */
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  color: #000;
+}
+
+@media screen and (max-width: 512px) {
+  .wrapper {
+    font-size: 1.1rem;
+
+    width: 420px;
+
+    margin: 50px auto;
+  }
+
+  .filter {
+    width: 320px;
+    padding: 4rem;
+  }
+}

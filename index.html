@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <span class="material-symbols-outlined close-icon"> close </span>
+
+      <div class="filter">
+        <h3>Filter</h3>
+
+        <div class="top-items">
+          <label for="from"><strong>From</strong></label>
+          <input type="text" placeholder="Your Name" />
+
+          <label class="space" for="from"
+            ><strong>When do you want to travel?</strong></label
+          >
+          <input type="text" placeholder="Your Destination" />
+        </div>
+
+        <div class="bottom-items">
+          <div class="checkbox-container">
+            <input type="checkbox" placeholder="idk" />
+            <label for="travel">Show only direct flights</label>
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" placeholder="idk" />
+            <label for="travel">Show prices</label>
+          </div>
+
+          <div class="temperature-destination-slidecontainer">
+            <label for="travel"><strong>Temperature</strong></label>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+              id="myRange"
+            />
+            <div class="flex">
+              <label for="travel">-20°C</label>
+              <label for="travel">-30°C+</label>
+            </div>
+          </div>
+
+          <button class="apply-filter">Apply Filter</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
